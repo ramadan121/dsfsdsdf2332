@@ -1,0 +1,640 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+h1,h2,h3{
+    font-family: sans-serif;
+}
+
+nav ul{
+
+    float: right;
+/* margin-right:50px ; */
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 7px;
+}
+nav ul li a{
+    color: black;
+    text-transform: capitalize;
+  height: 50px;
+}
+.logo {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    padding: 0 20px;
+    font-size: 20px;
+    color: rgb(10, 194, 25);
+}
+
+
+ .logo img{
+    width: 50px;
+    line-height: 80px;
+
+
+padding: 20px 0;
+
+
+
+
+
+
+
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: rgb(10, 194, 25);
+    float: right;
+    line-height: 80px;
+    padding: 0 20px;
+    cursor: pointer;
+
+} 
+#check{
+    display: none;
+
+}
+
+.home {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+ padding: 20px 50px;
+   
+}
+
+.home .content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.home .content .title {
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 900;
+    color: #111;
+}
+
+.home .content .subtitle {
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 400;
+    color: #111;
+}
+
+.home .content .desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.home .content .desc p {
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 400;
+    color: #444;
+}
+
+.home .btn-btn-join{
+ background-color: rgb(9, 161, 21);
+ padding: 20px 20px;
+ width: 140px;
+ border-radius: 4px;
+ color: white;
+}
+.home .btn-btn-join:hover{
+    background-color:rgb(10, 194, 25);
+}
+.home .content .btn {
+    width: fit-content;
+    padding: 0.8rem 2.2rem;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #fff;
+    background-color:rgb(9, 161, 21);
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+
+.home .content .btn:hover {
+    background-color:rgb(10, 194, 25);
+}
+
+.home .image {
+    width: 100%;
+    max-height: 80vh;
+    overflow: hidden;
+    display: flex;
+ justify-content: flex-end;
+}
+
+.home .image img {
+    width: fit-content;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.about {
+    padding: 2rem 6%;
+
+}
+
+.about .items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+
+}
+.about .item{
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 20px;
+}
+
+.about .items .content .desc {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0rem;
+ 
+}
+
+.about .items .content .desc p {
+    font-size: 16px;
+    line-height: 23px;
+    color: #222;
+   
+  
+}
+
+.about .items .content .list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.about .items .item .list .line {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+.about .items .item .list .line .icon {
+    width: 6rem;
+    min-width: 6rem;
+    height: 6rem;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(10, 194, 25);
+    border: 2px solid rgb(10, 167, 23);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: border 1s;
+}
+
+.about .items .item .list .line .icon:hover {
+    border: 2px solid rgb(10, 194, 25);
+    font-size: 2.2rem;
+}
+
+.about .items .item .list .line h4 {
+    font-size: 21px;
+    line-height: 28px;
+    font-weight: 400;
+    color: rgb(10, 194, 25);
+}
+
+.about .items .content .list .line p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #444;
+}
+
+.about .items .item .image {
+    width: 100%;
+    overflow: hidden;
+}
+
+.about .items .item .image img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.lessons {
+    background-color: #f1f1f1;
+}
+
+.lessons .items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    padding:80px;
+}
+
+.lessons .items .item {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background-color: #fff;
+    box-shadow: 1px 1px 3px #fff;
+    padding-bottom: 2rem;
+    cursor: pointer;
+    height: 500px;    
+  
+ 
+}
+.lessons .items .item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3px;
+    background-color: rgb(10, 194, 25);
+    transition: all 1s;
+}
+.lessons .items .item:hover::after {
+    width: 100%;
+}
+.lessons .items .item .image {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    height: 230px;
+}
+.lessons .items .item .image img {
+    width: 100%;
+    height: fit-content;
+    object-fit: cover;
+    transform: scale(1.1);
+    transition: all 1s;
+}
+.lessons .items .item:hover .image img {
+    transform: scale(1);
+}
+
+
+.lessons .items .item h2 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #111;
+    text-transform: capitalize;
+    padding: 0.5rem 1rem;
+} 
+.lessons .items .item p{
+    padding: 20px 20px;
+}
+.lessons .heading{
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    text-transform: capitalize;
+ font-size: 30px;
+}
+.lessons .heading span{
+    color: rgb(10, 194, 25) ;
+
+}
+.coach {
+    background-color: #f1f1f1;
+}
+.coach .headig{
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    text-transform: capitalize;
+ font-size: 30px;
+   
+}
+
+.coach .headig h3{
+ font-size: 14px;
+ color: rgb(10, 194, 25);
+}
+
+.coach .items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 30px;
+    padding: 20px 30px;
+}
+.coach .items .item{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background-color: #fafafa;
+    box-shadow: 1px 1px 3px #ccc;
+    padding: 3rem 0rem;
+    cursor: pointer;
+    transition: all 1s;
+    height: 500px;
+}
+.coach .items .item::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3px;
+    background-color: rgb(10, 194, 25);
+    transition: all 1s;
+}
+.coach .items .item:hover::after {
+    width: 100%;
+}
+
+    
+.coach .items .item .image{
+   
+   position: relative;
+   overflow: hidden;
+   width: 100%;
+   height: 200px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+
+   
+}
+.coach .items .item .image img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transform: scale(1.1);
+    transition:all 1s;
+    object-fit: cover;
+    border: 1px solid #f1f1f1;
+}
+.coach .items .item:hover .image img {
+    transform: scale(1);
+    border: 4px solid rgb(10, 194, 25);
+}
+.coach .items .item .image  .stars{
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+}
+.coach .items .item .image  .stars .active{
+    color:rgb(10, 194, 25);
+}
+.coach .items .item .image  .stars  span{
+    color: rgb(8, 134, 19);
+}
+.coach .items .item .content h2 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #111;
+    text-transform: capitalize;
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+.coach .items .item:hover h2 {
+    text-align: center;
+    color: rgb(10, 194, 25);
+}
+
+.coach .items .item .content p{
+    font-size: 16px;
+line-height: 20px;
+font-weight:400 ;
+padding: 1rem;
+padding-top: 0rem;
+text-align: center;
+}
+/* Existing CSS code */
+
+/* Add this media query for mobile screens */
+@media only screen and (max-width: 600px) {
+    header {
+        grid-template-columns: 1fr; /* Change header grid to single column */
+        text-align: center; /* Center align header content */
+    }
+
+    .nav-list {
+        flex-direction: column; /* Align navigation links vertically */
+        gap: 10px; /* Add some spacing between navigation links */
+    }
+
+    .nav-list .nav-link, .nav-list .nav-btn {
+        padding: 10px 0; /* Adjust padding for navigation links */
+    }
+
+    .home, .about, .lessons, .coach {
+        padding: 2rem 5%; /* Adjust padding for sections */
+    }
+
+    .home .content, .about .items, .lessons .items, .coach .items {
+        display: block; /* Display section content in single column */
+    }
+
+    .home .image, .about .item .image, .lessons .item .image, .coach .item .image {
+        display: none; /* Hide images in sections */
+    }
+}
+
+.contact {
+    background-color: #222;
+    padding-top: 10vh;
+    padding-bottom: 10rem;
+    position: relative;
+}
+
+.contact .items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.contact .heading {
+    
+    color: #fff;
+
+}
+
+.contact .heading .title {
+    color: #eee;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.contact .heading .subtitle {
+    color: #aaa;
+    font-size: 18px;
+    padding: 4px;
+}
+
+.contact .items .item {
+    width: 100%;
+    border-bottom: 2px solid #444;
+    padding: 1rem;
+}
+
+.contact .items .item .map {
+    width: 100%;
+
+    height: 100%;
+}
+
+.contact .item form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact form .input {
+    padding: 0.75rem 1rem;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #111;
+    color: #ccc;
+    border: none;
+    outline: none;
+    margin-bottom: 1rem;
+}
+
+.contact form .btn-contact {
+    padding: 0.8rem 1rem;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 500;
+    background-color: #eee;
+    color: #111;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+.contact form .btn-contact {
+    background-color: #fff;
+    color: #000;
+
+}
+
+
+.contact .socials{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 6rem;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+}
+.contact .socials .s-link{
+    width: 45px;
+    height: 45px;
+    background-color: #eee;
+    color: rgb(10, 194, 25);
+    border: 2px solid rgb(10, 194, 25);
+    border-radius: 50%;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+}
+.contact .socials .s-link:hover{
+    color: #eee;
+    background-color:rgb(10, 194, 25);
+}
+.rights {
+    background-color: #f1f1f1;
+    padding: 0.75rem 6%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.rights p {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    color: #000;
+}
+
+.rights a {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 500;
+    color: rgb(10, 194, 25);
+}
+@media (max-width:953px) {
+    label.logo{
+        font-size: 30px;
+        padding-right: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media  (max-width:600px) {
+ .checkbtn{
+    display: block;
+ }
+ul{
+ position: relative;
+ width: 100%;
+ height: 400px;
+ background-color:  rgba(10, 194, 25, 0.973);
+ /* top: 90px; */
+ left: -100%;
+ text-align: center;
+ transition:all .5s;
+ -webkit-transition:all .5s;
+ -moz-transition:all .5s;
+ -ms-transition:all .5s;
+ -o-transition:all .5s;
+}
+nav ul li {
+    display: block;
+}
+a:hover{
+    background:none ;
+    color:white;
+}
+#check:checked ~ ul{
+    left: 0;
+}
+}
